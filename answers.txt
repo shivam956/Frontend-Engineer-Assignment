@@ -1,0 +1,18 @@
+Frontend Engineer Assignment
+
+Explain what the simple List component does.
+Answer: Returns a list component containing all items of the data passed in items array of objects which should have text property in it and on clicking any list it changes color. By default no list is selected so all display same color.
+
+
+What problems / warnings are there with code?
+Answer: Following are the problems/warnings with code:
+1. Providing null to items for defaultProps throws error during mapping.
+2. Need to replace array with arrayOf and shapeOf with shape
+3. Need to check selected index is same as current index.
+4. Keys keys are important for react when mapping data and creating similar components since then react can use this key to compare those components in dom while updating.
+5. Wrapping functions in useCallback is good practice while using memo.
+6. Passing this(() => {}) way onclick will be passed as a function rather than the result of the fn call.
+
+
+Please fix, optimize, and/or modify the component as much as you think is necessary.
+Answer: Please refer List.ts file
